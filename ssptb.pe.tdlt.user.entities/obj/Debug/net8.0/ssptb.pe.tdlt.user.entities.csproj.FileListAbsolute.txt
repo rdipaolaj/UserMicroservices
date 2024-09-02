@@ -1,0 +1,11 @@
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\bin\Debug\net8.0\ssptb.pe.tdlt.user.entities.deps.json
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\bin\Debug\net8.0\ssptb.pe.tdlt.user.entities.dll
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\bin\Debug\net8.0\ssptb.pe.tdlt.user.entities.pdb
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\obj\Debug\net8.0\ssptb.pe.tdlt.user.entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\obj\Debug\net8.0\ssptb.pe.tdlt.user.entities.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\obj\Debug\net8.0\ssptb.pe.tdlt.user.entities.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\obj\Debug\net8.0\ssptb.pe.tdlt.user.entities.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\obj\Debug\net8.0\ssptb.pe.tdlt.user.entities.dll
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\obj\Debug\net8.0\refint\ssptb.pe.tdlt.user.entities.dll
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\obj\Debug\net8.0\ssptb.pe.tdlt.user.entities.pdb
+C:\Users\Usuario\Desktop\Proyectos\Upc-proyectos\ssptb.pe.tdlt.user.service\ssptb.pe.tdlt.user\ssptb.pe.tdlt.user.entities\obj\Debug\net8.0\ref\ssptb.pe.tdlt.user.entities.dll

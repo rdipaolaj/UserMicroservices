@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.command\ssptb.pe.tdlt.user.command.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.common\ssptb.pe.tdlt.user.common.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.entities\ssptb.pe.tdlt.user.entities.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.secretsmanager\ssptb.pe.tdlt.user.secretsmanager.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
+    <PackageReference Include="MediatR" Version="12.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.commandhandler\ssptb.pe.tdlt.user.commandhandler.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.commandvalidator\ssptb.pe.tdlt.user.commandvalidator.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.common\ssptb.pe.tdlt.user.common.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.internalservices\ssptb.pe.tdlt.user.internalservices.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.redis\ssptb.pe.tdlt.user.redis.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.secretsmanager\ssptb.pe.tdlt.user.secretsmanager.csproj" />
+  </ItemGroup>
+
+</Project>

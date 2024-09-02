@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ssptb.pe.tdlt.user.api.props" />
+</Project>

@@ -1,0 +1,1031 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.api\\ssptb.pe.tdlt.user.api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.api\\ssptb.pe.tdlt.user.api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.api\\ssptb.pe.tdlt.user.api.csproj",
+        "projectName": "ssptb.pe.tdlt.user.api",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.api\\ssptb.pe.tdlt.user.api.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.data\\ssptb.pe.tdlt.user.data.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.data\\ssptb.pe.tdlt.user.data.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.infraestructure\\ssptb.pe.tdlt.user.infraestructure.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.infraestructure\\ssptb.pe.tdlt.user.infraestructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Asp.Versioning.Http": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandhandler\\ssptb.pe.tdlt.user.commandhandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandhandler\\ssptb.pe.tdlt.user.commandhandler.csproj",
+        "projectName": "ssptb.pe.tdlt.user.commandhandler",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandhandler\\ssptb.pe.tdlt.user.commandhandler.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandhandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.data\\ssptb.pe.tdlt.user.data.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.data\\ssptb.pe.tdlt.user.data.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.internalservices\\ssptb.pe.tdlt.user.internalservices.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.internalservices\\ssptb.pe.tdlt.user.internalservices.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.redis\\ssptb.pe.tdlt.user.redis.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.redis\\ssptb.pe.tdlt.user.redis.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Konscious.Security.Cryptography.Argon2": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandvalidator\\ssptb.pe.tdlt.user.commandvalidator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandvalidator\\ssptb.pe.tdlt.user.commandvalidator.csproj",
+        "projectName": "ssptb.pe.tdlt.user.commandvalidator",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandvalidator\\ssptb.pe.tdlt.user.commandvalidator.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandvalidator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj",
+        "projectName": "ssptb.pe.tdlt.user.command",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj",
+        "projectName": "ssptb.pe.tdlt.user.common",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Konscious.Security.Cryptography.Argon2": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "TimeZoneConverter": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.data\\ssptb.pe.tdlt.user.data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.data\\ssptb.pe.tdlt.user.data.csproj",
+        "projectName": "ssptb.pe.tdlt.user.data",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.data\\ssptb.pe.tdlt.user.data.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.command\\ssptb.pe.tdlt.user.command.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj",
+        "projectName": "ssptb.pe.tdlt.user.dto",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj",
+        "projectName": "ssptb.pe.tdlt.user.entities",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.infraestructure\\ssptb.pe.tdlt.user.infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.infraestructure\\ssptb.pe.tdlt.user.infraestructure.csproj",
+        "projectName": "ssptb.pe.tdlt.user.infraestructure",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.infraestructure\\ssptb.pe.tdlt.user.infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandhandler\\ssptb.pe.tdlt.user.commandhandler.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandhandler\\ssptb.pe.tdlt.user.commandhandler.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandvalidator\\ssptb.pe.tdlt.user.commandvalidator.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.commandvalidator\\ssptb.pe.tdlt.user.commandvalidator.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.internalservices\\ssptb.pe.tdlt.user.internalservices.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.internalservices\\ssptb.pe.tdlt.user.internalservices.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.redis\\ssptb.pe.tdlt.user.redis.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.redis\\ssptb.pe.tdlt.user.redis.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.internalservices\\ssptb.pe.tdlt.user.internalservices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.internalservices\\ssptb.pe.tdlt.user.internalservices.csproj",
+        "projectName": "ssptb.pe.tdlt.user.internalservices",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.internalservices\\ssptb.pe.tdlt.user.internalservices.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.internalservices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.dto\\ssptb.pe.tdlt.user.dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.redis\\ssptb.pe.tdlt.user.redis.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.redis\\ssptb.pe.tdlt.user.redis.csproj",
+        "projectName": "ssptb.pe.tdlt.user.redis",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.redis\\ssptb.pe.tdlt.user.redis.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.redis\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.entities\\ssptb.pe.tdlt.user.entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj",
+        "projectName": "ssptb.pe.tdlt.user.secretsmanager",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\ssptb.pe.tdlt.user.secretsmanager.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.secretsmanager\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\Upc-proyectos\\ssptb.pe.tdlt.user.service\\ssptb.pe.tdlt.user\\ssptb.pe.tdlt.user.common\\ssptb.pe.tdlt.user.common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AWSSDK.SecretsManager": {
+              "target": "Package",
+              "version": "[3.7.400.11, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

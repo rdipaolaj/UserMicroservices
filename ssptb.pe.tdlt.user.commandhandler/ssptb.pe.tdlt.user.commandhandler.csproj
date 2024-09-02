@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.command\ssptb.pe.tdlt.user.command.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.common\ssptb.pe.tdlt.user.common.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.data\ssptb.pe.tdlt.user.data.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.internalservices\ssptb.pe.tdlt.user.internalservices.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.redis\ssptb.pe.tdlt.user.redis.csproj" />
+    <ProjectReference Include="..\ssptb.pe.tdlt.user.secretsmanager\ssptb.pe.tdlt.user.secretsmanager.csproj" />
+  </ItemGroup>
+
+</Project>
