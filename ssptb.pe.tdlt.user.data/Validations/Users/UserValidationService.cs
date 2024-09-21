@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ssptb.pe.tdlt.user.command.Command;
+using ssptb.pe.tdlt.user.common.Responses;
 
 namespace ssptb.pe.tdlt.user.data.Validations.Users;
 public class UserValidationService : IUserValidationService
@@ -11,21 +12,30 @@ public class UserValidationService : IUserValidationService
         _context = context;
     }
 
-    public async Task ValidateUserAsync(CreateUserCommand request, CancellationToken cancellationToken)
+    public async Task<ApiResponse<string>> ValidateUserAsync(CreateUserCommand request, CancellationToken cancellationToken)
     {
+        var validationErrors = new List<ErrorDetail>();
+
         if (await _context.Users.AnyAsync(u => u.Username == request.Username, cancellationToken))
         {
-            throw new Exception("Username already exists in the database.");
+            validationErrors.Add(new ErrorDetail { Code = "USER0009", Description = "Username already exists in the database." });
         }
 
         if (await _context.Users.AnyAsync(u => u.Email == request.Email, cancellationToken))
         {
-            throw new Exception("Email already exists in the database.");
+            validationErrors.Add(new ErrorDetail { Code = "USER0010", Description = "Email already exists in the database." });
         }
 
         if (await _context.Users.AnyAsync(u => u.PhoneNumber == request.PhoneNumber, cancellationToken))
         {
-            throw new Exception("Phone number already exists in the database.");
+            validationErrors.Add(new ErrorDetail { Code = "USER0011", Description = "Phone number already exists in the database." });
         }
+
+        if (validationErrors.Any())
+        {
+            return ApiResponseHelper.CreateValidationErrorResponse(validationErrors);
+        }
+
+        return ApiResponseHelper.CreateSuccessResponse("Validation passed");
     }
 }

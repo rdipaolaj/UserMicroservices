@@ -89,4 +89,19 @@ public static class ApiResponseHelper
             Errors = validationErrors
         };
     }
+
+    /// <summary>
+    /// Crea una respuesta de validación de entrada fallida con un tipo genérico.
+    /// </summary>
+    public static ApiResponse<T> CreateValidationErrorResponse<T>(List<ErrorDetail> validationErrors, string message = "Validation failed.")
+    {
+        return new ApiResponse<T>
+        {
+            Success = false,
+            StatusCode = 400, // Código de estado para Bad Request
+            Message = message,
+            Data = default!,
+            Errors = validationErrors
+        };
+    }
 }

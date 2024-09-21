@@ -12,8 +12,8 @@ using ssptb.pe.tdlt.user.data;
 namespace ssptb.pe.tdlt.user.data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240901031704_AddSaltPasswordToUser")]
-    partial class AddSaltPasswordToUser
+    [Migration("20240920030423_ActualizacionFechaLastLogin")]
+    partial class ActualizacionFechaLastLogin
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,46 @@ namespace ssptb.pe.tdlt.user.data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+
+            modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.Role", b =>
+                {
+                    b.Property<Guid>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.RolePermission", b =>
+                {
+                    b.Property<Guid>("RolePermissionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("PermissionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("RolePermissionId");
+
+                    b.HasIndex("PermissionId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("RolePermissions");
+                });
 
             modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.User", b =>
                 {
@@ -58,18 +98,17 @@ namespace ssptb.pe.tdlt.user.data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("LastLogin")
+                    b.Property<DateTime?>("LastLogin")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("SaltPassword")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uuid");
 
-                    b.Property<string>("UserRole")
+                    b.Property<string>("SaltPassword")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -78,6 +117,8 @@ namespace ssptb.pe.tdlt.user.data.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("UserId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
@@ -123,14 +164,39 @@ namespace ssptb.pe.tdlt.user.data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("PermissionId");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("UserPermissions");
+                });
+
+            modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.RolePermission", b =>
+                {
+                    b.HasOne("ssptb.pe.tdlt.user.entities.Entities.UserPermission", "Permission")
+                        .WithMany()
+                        .HasForeignKey("PermissionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ssptb.pe.tdlt.user.entities.Entities.Role", "Role")
+                        .WithMany("RolePermissions")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Permission");
+
+                    b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.User", b =>
+                {
+                    b.HasOne("ssptb.pe.tdlt.user.entities.Entities.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.UserActivityLog", b =>
@@ -142,18 +208,16 @@ namespace ssptb.pe.tdlt.user.data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.UserPermission", b =>
+            modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.Role", b =>
                 {
-                    b.HasOne("ssptb.pe.tdlt.user.entities.Entities.User", null)
-                        .WithMany("Permissions")
-                        .HasForeignKey("UserId");
+                    b.Navigation("RolePermissions");
+
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.User", b =>
                 {
                     b.Navigation("ActivityLogs");
-
-                    b.Navigation("Permissions");
                 });
 #pragma warning restore 612, 618
         }

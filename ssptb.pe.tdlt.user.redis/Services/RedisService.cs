@@ -91,7 +91,13 @@ internal class RedisService : IRedisService
     /// <returns>Resultado del registro de la información</returns>
     public async Task<bool> SaveInformationAsJsonAsync(string key, object value, TimeSpan expiration)
     {
-        string jsonData = JsonSerializer.Serialize(value);
+        var options = new JsonSerializerOptions
+        {
+            ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve, // Manejo de referencias cíclicas
+            WriteIndented = false
+        };
+
+        string jsonData = JsonSerializer.Serialize(value, options);
 
         bool result = await _database.StringSetAsync(key, jsonData, expiration);
 

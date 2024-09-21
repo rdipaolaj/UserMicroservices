@@ -15,4 +15,9 @@
     <ProjectReference Include="..\ssptb.pe.tdlt.user.common\ssptb.pe.tdlt.user.common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="RolePermission\" />
+    <Folder Include="Role\" />
+  </ItemGroup>
+
 </Project>

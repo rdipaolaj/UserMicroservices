@@ -1,7 +1,8 @@
 ﻿using ssptb.pe.tdlt.user.command.Command;
+using ssptb.pe.tdlt.user.common.Responses;
 
 namespace ssptb.pe.tdlt.user.data.Validations.Users;
 public interface IUserValidationService
 {
-    Task ValidateUserAsync(CreateUserCommand request, CancellationToken cancellationToken);
+    Task<ApiResponse<string>> ValidateUserAsync(CreateUserCommand request, CancellationToken cancellationToken);
 }

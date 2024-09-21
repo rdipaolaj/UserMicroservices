@@ -25,8 +25,9 @@ public enum ApiErrorCode
 
 public enum UserType
 {
-    Individual,
-    Corporate
+    User,
+    Corporate,
+    Admin
 }
 
 public enum UserStatus

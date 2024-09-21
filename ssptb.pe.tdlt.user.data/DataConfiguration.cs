@@ -4,6 +4,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using ssptb.pe.tdlt.user.common.Secrets;
 using ssptb.pe.tdlt.user.common.Settings;
+using ssptb.pe.tdlt.user.data.Seed;
+using ssptb.pe.tdlt.user.data.Validations.Role;
+using ssptb.pe.tdlt.user.data.Validations.Role.Service;
+using ssptb.pe.tdlt.user.data.Validations.RolePermission.Service;
 using ssptb.pe.tdlt.user.data.Validations.Users;
 using ssptb.pe.tdlt.user.data.Validations.Users.Service;
 using ssptb.pe.tdlt.user.secretsmanager.Services;
@@ -35,7 +39,18 @@ public static class DataConfiguration
     public static IServiceCollection AddDataServicesConfiguration(this IServiceCollection services)
     {
         services.AddScoped<IUserValidationService, UserValidationService>();
+        services.AddScoped<IRoleValidationService, RoleValidationService>();
+
+        services.AddScoped<IRolePermissionService, RolePermissionService>();
+
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IRoleService, RoleService>();
+
+        // Registrar el DatabaseSeeder
+        services.AddTransient<DatabaseSeeder>();
+
+        // Registrar el HostedService para ejecutar el seeder en segundo plano
+        services.AddHostedService<DatabaseSeedHostedService>();
 
         return services;
     }

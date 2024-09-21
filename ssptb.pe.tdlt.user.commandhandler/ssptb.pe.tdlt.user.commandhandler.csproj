@@ -19,4 +19,8 @@
     <ProjectReference Include="..\ssptb.pe.tdlt.user.secretsmanager\ssptb.pe.tdlt.user.secretsmanager.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Role\" />
+  </ItemGroup>
+
 </Project>
