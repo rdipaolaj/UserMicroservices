@@ -5,7 +5,7 @@ public class GetUserByIdResponse
     public string Username { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string PhoneNumber { get; set; } = string.Empty;
-    public string UserRole { get; set; } = string.Empty;
+    public Guid RoleId { get; set; }
     public string CompanyName { get; set; } = string.Empty;
     public string Department { get; set; } = string.Empty;
     public string JobTitle { get; set; } = string.Empty;

@@ -15,8 +15,4 @@
     <ProjectReference Include="..\ssptb.pe.tdlt.user.entities\ssptb.pe.tdlt.user.entities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dtos\Role\" />
-  </ItemGroup>
-
 </Project>
