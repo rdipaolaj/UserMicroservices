@@ -19,6 +19,8 @@ builder.Services.AddHttpClient();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
+
 builder.Services.AddMediatRAssemblyConfiguration();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();

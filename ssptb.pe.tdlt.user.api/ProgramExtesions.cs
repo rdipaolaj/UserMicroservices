@@ -58,6 +58,7 @@ public static class ProgramExtesions
         var secretManagerService = (ISecretManagerService)serviceProvider.GetService(typeof(ISecretManagerService));
 
         PostgresDbSecrets secretsPostgres = secretManagerService.GetPostgresDbSecrets().GetAwaiter().GetResult();
+        RedisSecrets redisSecrets = secretManagerService.GetRedisSecrets().GetAwaiter().GetResult();
 
         services.Configure<PostgresDbSettings>(options =>
         {
@@ -68,6 +69,11 @@ public static class ProgramExtesions
             options.Port = secretsPostgres.Port;
             options.Dbname = secretsPostgres.Dbname;
             options.DbInstanceIdentifier = secretsPostgres.DbInstanceIdentifier;
+        });
+
+        services.Configure<RedisKeySettings>(options =>
+        {
+            options.PrivateKey = redisSecrets.PrivateKey;
         });
 
         return services;

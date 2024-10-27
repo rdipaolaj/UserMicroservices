@@ -23,7 +23,10 @@ internal class SecretManagerService : ISecretManagerService
     }
 
     public async Task<PostgresDbSecrets?> GetPostgresDbSecrets()
-        => await GetSecret<PostgresDbSecrets>(_settings.Value.ArnAuthSecrets);
+        => await GetSecret<PostgresDbSecrets>(_settings.Value.ArnPostgresSecrets);
+
+    public async Task<RedisSecrets?> GetRedisSecrets()
+        => await GetSecret<RedisSecrets>(_settings.Value.ArnRedisSecrets);
 
     private async Task<T?> GetSecret<T>(string arn) where T : ISecret
     {
