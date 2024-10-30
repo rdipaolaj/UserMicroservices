@@ -18,6 +18,9 @@ public class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        // Especifica el esquema predeterminado
+        modelBuilder.HasDefaultSchema("userdb");
+
         // Configurar relación User-Role
         modelBuilder.Entity<User>()
             .HasOne(u => u.Role)

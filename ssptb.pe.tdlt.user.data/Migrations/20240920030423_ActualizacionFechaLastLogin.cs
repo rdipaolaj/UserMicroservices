@@ -14,6 +14,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
             migrationBuilder.AlterColumn<DateTime>(
                 name: "LastLogin",
                 table: "Users",
+                schema: "userdb",
                 type: "timestamp with time zone",
                 nullable: true,
                 oldClrType: typeof(DateTime),
@@ -26,6 +27,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
             migrationBuilder.AlterColumn<DateTime>(
                 name: "LastLogin",
                 table: "Users",
+                schema: "userdb",
                 type: "timestamp with time zone",
                 nullable: false,
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),

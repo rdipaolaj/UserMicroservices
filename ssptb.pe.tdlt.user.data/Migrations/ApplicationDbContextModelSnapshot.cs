@@ -38,7 +38,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
 
                     b.HasKey("RoleId");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Roles", "userdb");
                 });
 
             modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.RolePermission", b =>
@@ -59,7 +59,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("RolePermissions");
+                    b.ToTable("RolePermissions", "userdb");
                 });
 
             modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.User", b =>
@@ -117,7 +117,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", "userdb");
                 });
 
             modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.UserActivityLog", b =>
@@ -144,7 +144,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserActivityLogs");
+                    b.ToTable("UserActivityLogs", "userdb");
                 });
 
             modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.UserPermission", b =>
@@ -163,7 +163,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
 
                     b.HasKey("PermissionId");
 
-                    b.ToTable("UserPermissions");
+                    b.ToTable("UserPermissions", "userdb");
                 });
 
             modelBuilder.Entity("ssptb.pe.tdlt.user.entities.Entities.RolePermission", b =>
