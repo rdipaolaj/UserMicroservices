@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ssptb.pe.tdlt.user.api.Configuration;
 using ssptb.pe.tdlt.user.command.Queries;
+using ssptb.pe.tdlt.user.command.Queries.Role;
 
 namespace ssptb.pe.tdlt.user.api.Controllers;
 

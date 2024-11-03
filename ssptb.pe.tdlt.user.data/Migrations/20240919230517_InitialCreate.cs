@@ -13,6 +13,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Roles",
+                schema: "userdb",
                 columns: table => new
                 {
                     RoleId = table.Column<Guid>(type: "uuid", nullable: false),
@@ -26,6 +27,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
 
             migrationBuilder.CreateTable(
                 name: "UserPermissions",
+                schema: "userdb",
                 columns: table => new
                 {
                     PermissionId = table.Column<Guid>(type: "uuid", nullable: false),
@@ -39,6 +41,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
 
             migrationBuilder.CreateTable(
                 name: "Users",
+                schema: "userdb",
                 columns: table => new
                 {
                     UserId = table.Column<Guid>(type: "uuid", nullable: false),
@@ -62,12 +65,14 @@ namespace ssptb.pe.tdlt.user.data.Migrations
                         name: "FK_Users_Roles_RoleId",
                         column: x => x.RoleId,
                         principalTable: "Roles",
+                        principalSchema: "userdb",
                         principalColumn: "RoleId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
                 name: "RolePermissions",
+                schema: "userdb",
                 columns: table => new
                 {
                     RolePermissionId = table.Column<Guid>(type: "uuid", nullable: false),
@@ -81,18 +86,21 @@ namespace ssptb.pe.tdlt.user.data.Migrations
                         name: "FK_RolePermissions_Roles_RoleId",
                         column: x => x.RoleId,
                         principalTable: "Roles",
+                        principalSchema: "userdb",
                         principalColumn: "RoleId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_RolePermissions_UserPermissions_PermissionId",
                         column: x => x.PermissionId,
                         principalTable: "UserPermissions",
+                        principalSchema: "userdb",
                         principalColumn: "PermissionId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
                 name: "UserActivityLogs",
+                schema: "userdb",
                 columns: table => new
                 {
                     ActivityLogId = table.Column<Guid>(type: "uuid", nullable: false),
@@ -108,6 +116,7 @@ namespace ssptb.pe.tdlt.user.data.Migrations
                         name: "FK_UserActivityLogs_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
+                        principalSchema: "userdb",
                         principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -115,21 +124,25 @@ namespace ssptb.pe.tdlt.user.data.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_RolePermissions_PermissionId",
                 table: "RolePermissions",
+                schema: "userdb",
                 column: "PermissionId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_RolePermissions_RoleId",
                 table: "RolePermissions",
+                schema: "userdb",
                 column: "RoleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserActivityLogs_UserId",
                 table: "UserActivityLogs",
+                schema: "userdb",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_RoleId",
                 table: "Users",
+                schema: "userdb",
                 column: "RoleId");
         }
 
@@ -137,19 +150,24 @@ namespace ssptb.pe.tdlt.user.data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "RolePermissions");
+                name: "RolePermissions",
+                schema: "userdb");
 
             migrationBuilder.DropTable(
-                name: "UserActivityLogs");
+                name: "UserActivityLogs",
+                schema: "userdb");
 
             migrationBuilder.DropTable(
-                name: "UserPermissions");
+                name: "UserPermissions",
+                schema: "userdb");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "Users",
+                schema: "userdb");
 
             migrationBuilder.DropTable(
-                name: "Roles");
+                name: "Roles",
+                schema: "userdb");
         }
     }
 }

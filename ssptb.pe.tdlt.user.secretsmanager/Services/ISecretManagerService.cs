@@ -4,4 +4,5 @@ namespace ssptb.pe.tdlt.user.secretsmanager.Services;
 public interface ISecretManagerService
 {
     Task<PostgresDbSecrets?> GetPostgresDbSecrets();
+    Task<RedisSecrets?> GetRedisSecrets();
 }
