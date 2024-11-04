@@ -1,5 +1,6 @@
 ﻿using Mapster;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using ssptb.pe.tdlt.user.command.Queries;
 using ssptb.pe.tdlt.user.common.Responses;
@@ -22,7 +23,9 @@ public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, ApiResp
     {
         _logger.LogInformation($"Fetching user with ID {request.UserId}...");
 
-        var user = await _context.Users.FindAsync(request.UserId);
+        var user = await _context.Users
+            .Include(u => u.Role) // Incluir la entidad Role relacionada
+            .FirstOrDefaultAsync(u => u.UserId == request.UserId, cancellationToken);
 
         if (user == null)
         {
@@ -30,6 +33,7 @@ public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, ApiResp
         }
 
         var response = user.Adapt<GetUserByIdResponse>();
+        response.RoleName = user.Role?.RoleName;
 
         return ApiResponseHelper.CreateSuccessResponse(response, "User retrieved successfully");
     }
